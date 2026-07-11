@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#ffb6c1,#fff5b7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.container{
+    width:90%;
+    max-width:450px;
+    text-align:center;
+}
+
+#screen{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    animation:show 0.8s;
+}
+
+h1{
+    color:#ff4081;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+p{
+    font-size:18px;
+    margin:15px;
+    color:#555;
+}
+
+button{
+    background:#ff4081;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-size:17px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.option{
+    display:block;
+    width:100%;
+    background:#fff0f5;
+    color:#333;
+    margin:10px 0;
+    border:2px solid #ffb6c1;
+}
+
+.gift{
+    font-size:70px;
+    animation:bounce 1s infinite;
+}
+
+.correct{
+    color:#28a745;
+    font-size:18px;
+}
+
+.wrong{
+    color:#ff0000;
+    font-size:18px;
+}
+
+
+@keyframes show{
+    from{
+        opacity:0;
+        transform:scale(0.8);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+          }
